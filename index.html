@@ -1,61 +1,96 @@
-<!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Christopher Schuster</title>
-        <style>
-           @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
-           @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); 
-           body {
-               background-color: #335c90;
-               margin-left: 50px;
-           }
-           h1 {
-                color: white;
-                font-family: 'Cinzel', serif;
-                font-size: 18pt;
-           } 
-           h2 {
-               color: white;
-               font-family: 'Roboto', sans-serif;
-           }
-           p {
-               color: white;
-               font-size: 15pt;               
-               font-family: 'Roboto', sans-serif;
-           }
-           a {
-               color: #e54c21;
-               font-size: 16pt;
-               font-family: 'Roboto', sans-serif;
-               text-decoration: none;
-           }
-           a:hover {
-               color: #f16524; 
-           }
-        </style>
-    </head>
-
-    <body>  
-        <header>
-            <hgroup>
-                <h1>Meu nome é Christopher!</h1>
-                <h2>Sou aluno do Curso Técnico em Informática no SEG</h2>
-            </hgroup> 
-        </header>
-
-        <p>Esse documento é um exercício da disciplina "Internet, HTML e CSS", estamos aprendendo<br/> a criar um documento HTML. Nesta página pratiquei a inserção de <b>títulos</b>, <b>parágrafos</b>, <b>links</b>,<br/> <b>imagens</b>, <b>fontes</b> e <b>listas</b>, além de uma formatação simples em <b>CSS.</b></p>
-            
-        <h1>Lista de links úteis</h1>
-            <ul>
-                <li><a href="https://plataforma.educaread.com.br/">Ambiente Virtual de Aprendizagem - SEG</a></li>
-                <li><a href="http://portal.estudeseg.com.br/Corpore.Net/Login.aspx">Portal - SEG</a></li>
-            </ul>
-         
-        <h1>Inserindo uma imagem em HTML</h1>    
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="Símbolo do HTML" width="200px"/>
-            
-    </body>
-
+<head>
+    <title>Hendrix - Instrumentos Musicais</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+<body>
+    <header>
+      <hgroup>
+          <h1>Hendrix</h1>
+          <h2>Instrumentos Musicais</h2>
+      </hgroup>
+      <nav id="topmenu">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="contact.html">Contato</a></li>
+        </ul>   
+      </nav>
+    </header>
+        <div id="leftmenu"> 
+            <h1>Categorias</h1> 
+            <nav>
+                <ul>                    
+                    <li>Guitarras</li>                   
+                    <li>Violões</li>                    
+                    <li>Contra-baixos</li>                    
+                    <li>Baterias</li>                   
+                    <li>Microfones</li>                   
+                </ul>
+            </nav>
+            <div id="author">
+                <h1 id=>Desenvolvido por <a href="http://www.instagram.com/christopherslg" target="_blank">Christopher Schuster</a></h1>
+                <h2>Copyright &copy; 2020</h2>
+            </div>    
+        </div>
+      <div id="onsale">
+          <h1>Produtos em promoção</h1>
+          <hr>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Preço</th>
+                </tr>
+                <tr>
+                    <td><img id="guitarpic" src="images/fender-strat-sun.jpg"></td>
+                    <td>Fender </td>
+                    <td>Stratocaster</td>
+                    <td>R$ 25.000,00</td>
+                </tr>
+                <tr>
+                    <td><img id="guitarpic" src="images/gibson-lespaul.jpg"></td>
+                    <td>Gibson</td>
+                    <td>Les Paul</td>
+                    <td>R$ 28.000,00</td>
+                </tr> 
+                <tr>
+                    <td><img id="guitarpic" src="images/ibanez-jem.jpg"></td>
+                    <td>Ibanez</td>
+                    <td>JEM</td>
+                    <td> R$ 22.000,00</td>
+                </tr>           
+            </table>
+            <table id="direita">
+                <tr>
+                    <th></th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Preço</th>
+                </tr>
+                <tr>
+                    <td><img id="guitarpic" src="images/bateria-tama.jpg"></td>
+                    <td>Tama </td>
+                    <td>SG52KH5 WR</td>
+                    <td>R$ 5.000,00</td>
+                </tr>
+                <tr>
+                    <td><img id="guitarpic" src="images/fender-jb.png"></td>
+                    <td>Fender</td>
+                    <td>Jazz Bass</td>
+                    <td>R$ 18.000,00</td>
+                </tr> 
+                <tr>
+                    <td><img id="guitarpic" src="images/mic-sen.jpg"></td>
+                    <td>Sennheiser</td>
+                    <td>E-835</td>
+                    <td>R$ 2.000,00</td>
+                </tr>           
+            </table>
+      </div>
+</body>
 </html>
