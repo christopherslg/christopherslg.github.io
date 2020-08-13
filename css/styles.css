@@ -211,7 +211,7 @@ form {
     margin-right: 600px;
     margin-top: 10px;
     border-radius: 10px;
-    padding: 15px;
+    padding: 12px;
     font-family: 'Roboto', sans-serif;
     display: block;
     float: right;
@@ -261,8 +261,8 @@ form {
 
 .enviar {
     background-color: white;
-    width: 100px;
-    height: 50px;
+    width: 90px;
+    height: 45px;
     border-radius: 8px;
     font-family: 'Roboto', sans-serif;
     border: 2px solid white;
