@@ -1,64 +1,87 @@
+<!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <title>Hendrix - Instrumentos Musicais</title>
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
-    <link rel="shortcut icon" href="images/favicon.ico" />
-</head>
-<body>
-    <header>
-      <hgroup>
-          <h1>Hendrix</h1>
-          <h2>Instrumentos Musicais</h2>
-      </hgroup>
-      <nav id="topmenu">
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="about.html">Sobre</a></li>
-            <li><a href="contact.html">Contato</a></li>
-        </ul>   
-      </nav>
-    </header>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div id="leftmenu"> 
-    <h1>Categorias</h1> 
-    <nav>
-        <ul>                    
-            <li>Guitarras</li>                   
-            <li>Violões</li>                    
-            <li>Contra-baixos</li>                    
-            <li>Baterias</li>                   
-            <li>Microfones</li>                   
-        </ul>
+    <title>Games</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+  </head>
+  <body>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--Menu topo-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Games</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Início <span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plataforma
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">PC</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Playstation</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Xbox</a>
+              </div>
+
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Sobre</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contato</a>
+              </li>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
+        </div>
     </nav>
-    <div id="author">
-        <h1 id=>Desenvolvido por <a href="http://www.instagram.com/christopherslg" target="_blank">Christopher Schuster</a></h1>
-        <h2>Copyright &copy; 2020</h2>
-    </div>    
-</div>
-<div class="formulario">
-    <h1>Entre em contato conosco!</h1>
-    <hr/>
+
+    <!--Formulário-->
+
+    <div class="corpo">
+    
+      <h1>Deixe uma mensagem para nós!</h1>
+
     <form>
-        <p><label for="pnome" class="titulo">Nome</label></p>
-        <p><input type="text" placeholder="Nome completo" class="caixa"></p>
-
-        <p><label for="email" class="titulo">E-mail</label></p>
-        <p><input type="text" placeholder="Seu e-mail" class="caixa"></label></p>
-
-        <p class="titpeq"><input type="radio" name="gender" value="male">Masculino</p>
-        <p class="titpeq"><input type="radio" name="gender" value="female">Feminino</p>
-
-        <p class="titpeq">Data de Nasc. </label><input type="date" class="caixa"/></p>
-
-        <h2>Mensagem</h2>
-
-        <textarea name="msg" cols="30" rows="5" placeholder="Digite aqui sua mensagem..." class="caixa"></textarea><br/>
-
-        <p><input type="submit" class="enviar"></p>
-        <p><input type="reset" class="apagar"></p>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Endereço de email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">Não iremos compartilhar seu email com mais ninguém.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
-</div>
-</body>
-</html>    
+
+  </div>
+
+    </body>
+    </html>
