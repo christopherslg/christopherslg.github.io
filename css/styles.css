@@ -28,6 +28,10 @@ body {
     color: white;
 }
 
+.btn-secondary {
+    margin: 3px;
+}
+
 .corpo {
     width: 700px;
     margin-left: 600px;
@@ -42,4 +46,16 @@ body {
 
 form {
     color: white;
+}
+
+.form-group {
+  width: 15%;  
+}
+
+.form-row {
+    width: 20%;
+}
+
+.form-check {
+    margin: 15px;
 }
