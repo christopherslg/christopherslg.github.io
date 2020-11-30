@@ -46,6 +46,7 @@ body {
 
 form {
     color: white;
+    ;
 }
 
 .form-group {
@@ -58,4 +59,10 @@ form {
 
 .form-check {
     margin: 15px;
+}
+
+.jumbotron {
+    max-width: 900px;
+    margin-left: 500px;
+    margin-top: 200px;
 }
