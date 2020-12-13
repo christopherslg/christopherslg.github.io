@@ -23,7 +23,7 @@
 }
 
 .carousel-caption h5 {
-    font-size: 40pt;   
+    font-size: 35pt;   
 }
 
 .servicos h1 {
@@ -43,15 +43,20 @@
 }
 
 .contato h1 {
-    padding: 30px; 
+    padding: 25px; 
 }
 
-.form-control {
-    margin: 15px;
-    padding: 25px;
+.contato h5 {
+    margin-bottom: 20px;
 }
 
 .servicos .img {
     height: 50px;
 }
+
+.contato .btn {
+    margin-bottom: 20px;
+}
+
+
 
