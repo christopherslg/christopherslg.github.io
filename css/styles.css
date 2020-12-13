@@ -10,16 +10,37 @@
     min-height: 700px;
 }
 
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+
+.carousel-item {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.carousel-caption h5 {
+    font-size: 40pt;   
+}
+
 .servicos {
-    height: 500px;
+    height: 400px;
 }
 .servicos h1 {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
+
+.card-deck {
+    margin-top: 100px;
+}
+
 .contato {
-    height: 500px;
+    height: 550px;
     background-color: #1b2838;
     color: white;
 }
@@ -32,3 +53,8 @@
     margin: 15px;
     padding: 25px;
 }
+
+.servicos .img {
+    height: 50px;
+}
+
